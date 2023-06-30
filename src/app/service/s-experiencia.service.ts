@@ -8,8 +8,7 @@ import { Experiencia } from '../model/experiencia';
   providedIn: 'root',
 })
 export class SExperienciaService {
-  experienciaURL =
-    'https://portfoliobackend-production-14f2.up.railway.app/explab/';
+  experienciaURL = 'localhost:8080/explab/';
   constructor(private httpClient: HttpClient) {}
 
   public lista(): Observable<Experiencia[]> {

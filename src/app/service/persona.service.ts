@@ -4,12 +4,11 @@ import { persona } from '../model/persona.model';
 import { HttpClient } from '@angular/common/http';
 
 
-
 @Injectable({
   providedIn: 'root',
 })
 export class PersonaService {
-  URL = 'https://portfoliobackend-production-14f2.up.railway.app/personas/';
+  URL = 'http://localhost:8080/personas/';
 
   constructor(private http: HttpClient) {}
 
